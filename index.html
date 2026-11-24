@@ -4,7 +4,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="theme-color" content="#dceffa">
+<meta name="theme-color" content="#eaf5fb">
 <title>Pretty Face Beauty | The PFB Edit</title>
 <meta name="description" content="Discover the Pretty Face Beauty collection.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,61 +12,60 @@
 <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root{--ice:#eaf5fb;--pale:#f5f9fc;--deep:#315c83;--navy:#174b76;--ink:#29465f;--white:#fff;--line:#d7e7f1}
+:root{--ice:#eaf5fb;--pale:#f5f9fc;--deep:#315c83;--navy:#174b76;--ink:#29465f;--line:#d7e7f1}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;background:#fff;color:var(--ink);font-family:"Playpen Sans",cursive;line-height:1.6}
+body{margin:0;background:white;color:var(--ink);font-family:"Playpen Sans",cursive;line-height:1.6}
 button,input,select,textarea{font:inherit}
 a{color:inherit;text-decoration:none}
-.announcement{padding:8px 14px;text-align:center;color:#fff;background:var(--deep);font-size:11px;letter-spacing:.08em}
+.announcement{padding:8px 14px;text-align:center;color:white;background:var(--deep);font-size:11px;letter-spacing:.08em}
 .site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
-.header-inner{max-width:1180px;margin:auto;min-height:74px;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
-.brand{color:var(--navy);font-size:clamp(17px,2.5vw,23px);font-weight:700;letter-spacing:-.06em;line-height:1.15}
-.brand small{display:block;margin-top:4px;font-size:8px;font-weight:500;letter-spacing:.23em}
+.header-inner{max-width:1180px;margin:auto;min-height:76px;padding:8px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand-logo-wrap{width:150px;height:65px;overflow:hidden;display:flex;align-items:center;justify-content:center;background:var(--ice);border-radius:8px}
+.brand-logo{width:100%;height:100%;object-fit:cover;transform:scale(1.55)}
 .nav-links{display:flex;gap:24px;font-size:12px;color:var(--deep)}
-.cart-trigger{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:99px;padding:9px 14px;cursor:pointer;font-size:12px}
-.hero{background:var(--ice);position:relative;overflow:hidden}
-.hero:before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;right:-120px;top:-180px;background:#b9dff277}
-.hero-inner{max-width:1180px;margin:auto;padding:62px 24px;min-height:470px;display:grid;grid-template-columns:1.05fr .85fr;align-items:center;gap:clamp(28px,6vw,80px);position:relative}
+.cart-trigger{border:1px solid var(--line);background:white;color:var(--navy);border-radius:99px;padding:9px 14px;cursor:pointer;font-size:12px}
+.hero{background:var(--ice);overflow:hidden}
+.hero-inner{max-width:1180px;margin:auto;padding:62px 24px;min-height:460px;display:grid;grid-template-columns:1.05fr .85fr;align-items:center;gap:clamp(28px,6vw,80px)}
 .eyebrow{color:var(--deep);font-size:10px;font-weight:600;letter-spacing:.17em;text-transform:uppercase}
 h1,h2,h3,p{margin-top:0}
 h1{max-width:570px;margin:13px 0 18px;color:var(--navy);font-size:clamp(38px,5.6vw,68px);font-weight:600;letter-spacing:-.075em;line-height:1.12}
 .hero-copy{max-width:450px;color:var(--deep);font-size:14px;line-height:1.9;margin-bottom:26px}
-.button{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:99px;background:var(--navy);color:#fff;padding:13px 22px;cursor:pointer;font-size:11px;font-weight:600;letter-spacing:.04em}
+.button{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:99px;background:var(--navy);color:white;padding:13px 22px;cursor:pointer;font-size:11px;font-weight:600;letter-spacing:.04em}
 .button:hover{background:var(--deep)}
 .hero-photo-wrap{width:100%;max-width:390px;justify-self:center}
-.hero-photo{display:block;width:100%;max-height:430px;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:48% 48% 18px 18px;background:#d8eaf5}
+.hero-photo{display:block;width:100%;max-height:430px;aspect-ratio:4/5;object-fit:cover;border-radius:48% 48% 18px 18px;background:#d8eaf5}
 .intro{padding:56px 24px 48px;text-align:center;max-width:800px;margin:auto}
-.intro h2,.section-heading h2{color:var(--navy);font-size:clamp(25px,3.5vw,38px);font-weight:600;letter-spacing:-.06em;margin:8px 0 10px}
-.intro p{max-width:610px;margin:auto;color:var(--deep);font-size:13px}
+.intro h2,.section-heading h2,.story-section h2,.school-section h2{color:var(--navy);font-size:clamp(25px,3.5vw,38px);font-weight:600;letter-spacing:-.06em;margin:8px 0 10px}
+.intro p,.story-section p,.school-section p{color:var(--deep);font-size:13px}
 .shop-section{background:var(--pale);padding:56px 24px 68px}
 .shop-inner{max-width:1120px;margin:auto}
 .section-heading{text-align:center;margin-bottom:30px}
-.section-heading p{color:var(--deep);font-size:12px;margin:0}
+.section-heading p{color:var(--deep);font-size:12px}
 .product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
-.product-card{min-width:0;padding:21px;background:#fff;border:1px solid #e3edf4;border-radius:22px;display:flex;flex-direction:column}
-.product-placeholder{min-height:112px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;padding:14px;text-align:center;border-radius:15px;background:linear-gradient(145deg,#edf7fc,#dceefa);color:#7393ad;font-size:10px;letter-spacing:.1em}
+.product-card{min-width:0;padding:21px;background:white;border:1px solid #e3edf4;border-radius:22px;display:flex;flex-direction:column}
+.product-placeholder{width:100%;aspect-ratio:4/3;display:flex;align-items:center;justify-content:center;margin-bottom:16px;padding:14px;text-align:center;border-radius:15px;background:linear-gradient(145deg,#edf7fc,#dceefa);color:#7393ad;font-size:10px;letter-spacing:.1em}
 .product-tag{align-self:flex-start;color:var(--navy);background:var(--ice);padding:4px 9px;border-radius:99px;font-size:9px;font-weight:600;letter-spacing:.08em;margin-bottom:8px}
 .product-card h3{color:var(--navy);font-size:18px;line-height:1.35;margin:0 0 4px;font-weight:600}
 .product-price{color:var(--navy);font-size:18px;font-weight:700;margin:0 0 10px}
 .product-description{color:#6a849a;font-size:10px;margin:0 0 13px;min-height:30px}
 .field-label{color:var(--deep);display:block;font-size:10px;margin:0 0 5px}
-.product-select,.shade-input{width:100%;min-height:42px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);padding:9px 11px;outline-color:#b9dff2;font-size:11px;margin-bottom:12px}
+.product-select,.shade-input{width:100%;min-height:42px;border:1px solid var(--line);border-radius:11px;background:white;color:var(--ink);padding:9px 11px;outline-color:#b9dff2;font-size:11px;margin-bottom:12px}
 .add-button{width:100%;margin-top:auto}
 .story-section{max-width:900px;margin:auto;padding:62px 24px;text-align:center}
-.story-section p{color:var(--deep);font-size:13px;max-width:620px;margin:auto}
+.story-section p{max-width:620px;margin:auto}
 .school-section{background:var(--ice);padding:52px 24px;text-align:center}
-.school-section p{color:var(--deep);font-size:13px;max-width:570px;margin:0 auto 20px}
-footer{background:var(--navy);color:#fff;padding:32px 24px;text-align:center}
+.school-section p{max-width:570px;margin:0 auto 20px}
+footer{background:var(--navy);color:white;padding:32px 24px;text-align:center}
 footer .footer-brand{font-size:20px;font-weight:600}
 footer p{font-size:10px;opacity:.85;margin:7px 0 0}
 .footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:17px;margin-top:14px;font-size:10px}
 .cart-overlay{position:fixed;inset:0;z-index:50;background:#0f263a70;display:none;justify-content:flex-end}
 .cart-overlay.open{display:flex}
-.cart-panel{width:min(440px,100%);height:100%;overflow-y:auto;background:#fff;padding:24px;box-shadow:0 14px 40px #234e7018}
+.cart-panel{width:min(440px,100%);height:100%;overflow-y:auto;background:white;padding:24px;box-shadow:0 14px 40px #234e7018}
 .cart-head{display:flex;align-items:center;justify-content:space-between}
 .cart-head h2{color:var(--navy);margin:0;font-size:23px}
-.icon-button{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:50%;width:38px;height:38px;cursor:pointer}
+.icon-button{border:1px solid var(--line);background:white;color:var(--navy);border-radius:50%;width:38px;height:38px;cursor:pointer}
 .cart-items{margin:20px 0}
 .cart-line{padding:13px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:10px}
 .cart-line strong{display:block;color:var(--navy);font-size:12px}
@@ -77,11 +76,12 @@ footer p{font-size:10px;opacity:.85;margin:7px 0 0}
 .cart-total{display:flex;justify-content:space-between;color:var(--navy);font-weight:700;padding:16px 0;border-top:1px solid var(--line)}
 .checkout-form{display:grid;gap:10px;margin-top:14px}
 .checkout-form h3{color:var(--navy);margin:8px 0 0;font-size:15px}
-.checkout-form input,.checkout-form select,.checkout-form textarea{width:100%;border:1px solid var(--line);border-radius:11px;padding:11px;color:var(--ink);background:#fff;font-size:11px}
+.checkout-form input,.checkout-form select,.checkout-form textarea{width:100%;border:1px solid var(--line);border-radius:11px;padding:11px;color:var(--ink);background:white;font-size:11px}
 .checkout-note{color:#70899e;font-size:10px;line-height:1.6}
 .empty-cart{color:#70899e;font-size:12px;padding:20px 0}
 @media(max-width:700px){
-.header-inner{min-height:66px;padding:10px 16px}
+.header-inner{min-height:66px;padding:7px 14px}
+.brand-logo-wrap{width:112px;height:52px}
 .nav-links{display:none}
 .hero-inner{grid-template-columns:1fr .82fr;gap:14px;padding:40px 17px;min-height:0}
 h1{font-size:clamp(29px,8vw,43px)}
@@ -92,7 +92,7 @@ h1{font-size:clamp(29px,8vw,43px)}
 .shop-section{padding:42px 14px 48px}
 .product-grid{gap:10px}
 .product-card{padding:12px;border-radius:16px}
-.product-placeholder{min-height:85px;font-size:8px;margin-bottom:11px}
+.product-placeholder{font-size:8px;margin-bottom:11px}
 .product-card h3{font-size:14px}
 .product-price{font-size:16px}
 .product-description{font-size:9px;min-height:38px}
@@ -113,7 +113,9 @@ h1{font-size:clamp(29px,8vw,43px)}
 
 <header class="site-header">
 <div class="header-inner">
-<a class="brand" href="#home">PRETTY FACE BEAUTY<small>BEAUTY, ON YOUR TERMS</small></a>
+<a class="brand-logo-wrap" href="#home" aria-label="Pretty Face Beauty home">
+<img class="brand-logo" src="pfb-logo.jpeg" alt="Pretty Face Beauty logo" onerror="this.parentElement.innerHTML='<span style=&quot;color:#174b76;font-size:13px;font-weight:bold&quot;>PFB</span>'">
+</a>
 <nav class="nav-links">
 <a href="#home">Home</a>
 <a href="#shop">Shop</a>
@@ -134,7 +136,7 @@ h1{font-size:clamp(29px,8vw,43px)}
 <a class="button" href="#shop">SHOP THE COLLECTION</a>
 </div>
 <div class="hero-photo-wrap">
-<img class="hero-photo" src="IMG_8256.jpeg" alt="Pretty Face Beauty model holding a PFB lip gloss" onerror="this.outerHTML='<div class=&quot;hero-photo&quot; style=&quot;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:#315c83;font-size:12px&quot;>Add your original model-with-gloss image as<br><strong>IMG_8256.jpeg</strong></div>'">
+<img class="hero-photo" src="IMG_8256.jpeg" alt="Pretty Face Beauty model holding a PFB lip gloss" onerror="this.outerHTML='<div class=&quot;hero-photo&quot; style=&quot;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:#315c83;font-size:12px&quot;>Add your original model photo as IMG_8256.jpeg</div>'">
 </div>
 </div>
 </section>
@@ -218,10 +220,9 @@ h1{font-size:clamp(29px,8vw,43px)}
 <script>
 const PFB_WHATSAPP="2347071633877";
 
-// Add the confirmed lip gloss and lip liner shade names here when ready.
 const products=[
 {id:"blush",name:"PFB Blush",price:10,tag:"NEW",description:"Choose from the PFB blush collection.",type:"shade",shades:["Pretty Thing","Pretty Bold","Pretty Toasted"]},
-{id:"gloss",name:"Lip Gloss",price:12,description:"A PFB lip essential. Enter your preferred shade.",type:"text",fieldLabel:"Preferred gloss shade"},
+{id:"gloss",name:"Lip Gloss",price:12,description:"Choose your preferred PFB gloss shade.",type:"shade",shades:["Pinky","Mulu","Shimmery","Crystal"]},
 {id:"liner",name:"Lip Liner",price:12,description:"Complete your lip look. Enter your preferred shade.",type:"text",fieldLabel:"Preferred liner shade"},
 {id:"icy-kit",name:"PFB Icy Lip Gloss Kit",price:38,description:"The complete PFB Icy three-shade lip gloss set.",type:"fixed"},
 {id:"icy-patches",name:"Icy Eye Patches",price:6,description:"Choose one pair or two pairs.",type:"patches"},
@@ -237,29 +238,24 @@ const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;"
 function renderProducts(){
 document.getElementById("product-grid").innerHTML=products.map(p=>{
 let field="";
-
 if(p.type==="shade"){
 field=`<label class="field-label" for="opt-${p.id}">Select shade</label>
 <select class="product-select" id="opt-${p.id}">
 <option value="">Choose a shade</option>
 ${p.shades.map(s=>`<option>${esc(s)}</option>`).join("")}
 </select>`;
-}
-else if(p.type==="text"){
+}else if(p.type==="text"){
 field=`<label class="field-label" for="opt-${p.id}">${p.fieldLabel}</label>
 <input class="shade-input" id="opt-${p.id}" placeholder="Enter shade name" maxlength="60">`;
-}
-else if(p.type==="patches"){
+}else if(p.type==="patches"){
 field=`<label class="field-label" for="opt-${p.id}">Pack size</label>
 <select class="product-select" id="opt-${p.id}">
 <option value="1">One pair — $6</option>
 <option value="2">Two pairs — $10</option>
 </select>`;
-}
-else{
+}else{
 field=`<div class="field-label">Complete set · No shade selection required</div>`;
 }
-
 return `<article class="product-card">
 <div class="product-placeholder">PFB PRODUCT IMAGE</div>
 ${p.tag?`<span class="product-tag">${p.tag}</span>`:""}
@@ -280,22 +276,18 @@ let option="",price=p.price;
 if(p.type==="shade"||p.type==="text"){
 option=el.value.trim();
 if(!option)return alert(p.type==="shade"?"Please choose a shade first.":"Please enter your preferred shade.");
-}
-else if(p.type==="patches"){
+}else if(p.type==="patches"){
 const n=Number(el.value);
 price=n===2?10:6;
 option=n===2?"Two pairs":"One pair";
-}
-else{
+}else{
 option="Complete PFB Icy set";
 }
 
 const key=id+"|"+option;
 const existing=cart.find(x=>x.key===key);
-
 if(existing)existing.quantity++;
 else cart.push({key,id,name:p.name,option,price,quantity:1});
-
 updateCart();
 openCart();
 }
@@ -303,10 +295,8 @@ openCart();
 function updateCart(){
 const count=cart.reduce((s,x)=>s+x.quantity,0);
 const total=cart.reduce((s,x)=>s+x.price*x.quantity,0);
-
 document.getElementById("cart-count").textContent=count;
 document.getElementById("cart-total").textContent=money(total);
-
 document.getElementById("cart-items").innerHTML=cart.length?
 cart.map((x,i)=>`<div class="cart-line">
 <div>
@@ -329,58 +319,35 @@ cart[i].quantity+=d;
 if(cart[i].quantity<=0)cart.splice(i,1);
 updateCart();
 }
-
-function removeItem(i){
-cart.splice(i,1);
-updateCart();
-}
-
+function removeItem(i){cart.splice(i,1);updateCart();}
 function openCart(){
 document.getElementById("cart-overlay").classList.add("open");
 document.body.style.overflow="hidden";
 updateCart();
 }
-
 function closeCart(){
 document.getElementById("cart-overlay").classList.remove("open");
 document.body.style.overflow="";
 }
-
-function overlayClose(e){
-if(e.target.id==="cart-overlay")closeCart();
-}
+function overlayClose(e){if(e.target.id==="cart-overlay")closeCart();}
 
 function submitOrder(e){
 e.preventDefault();
-
 if(!cart.length)return alert("Your bag is empty. Add a product before checking out.");
-
 const d=new FormData(e.currentTarget);
 const total=cart.reduce((s,x)=>s+x.price*x.quantity,0);
-
-const lines=cart.map(x=>
-`• ${x.name} — ${x.option} × ${x.quantity}: ${money(x.price*x.quantity)}`
-).join("\n");
-
+const lines=cart.map(x=>`• ${x.name} — ${x.option} × ${x.quantity}: ${money(x.price*x.quantity)}`).join("\n");
 const msg=[
-"Hello PFB! I'd like to place an order.",
-"",
-"ORDER DETAILS",
-lines,
-"",
-`Subtotal: ${money(total)}`,
-"",
-"CUSTOMER DETAILS",
+"Hello PFB! I'd like to place an order.","","ORDER DETAILS",lines,"",
+`Subtotal: ${money(total)}`,"","CUSTOMER DETAILS",
 `Name: ${d.get("customerName")}`,
 `Phone: ${d.get("phone")}`,
 `Email: ${d.get("email")||"Not provided"}`,
 `Delivery: ${d.get("delivery")}`,
 `Address: ${d.get("address")||"To be confirmed"}`,
-`Payment preference: ${d.get("payment")}`,
-"",
+`Payment preference: ${d.get("payment")}`,"",
 "Please confirm availability, delivery and payment instructions. Thank you!"
 ].join("\n");
-
 window.open(`https://wa.me/${PFB_WHATSAPP}?text=${encodeURIComponent(msg)}`,"_blank","noopener");
 }
 
@@ -389,3 +356,4 @@ updateCart();
 </script>
 </body>
 </html>
+

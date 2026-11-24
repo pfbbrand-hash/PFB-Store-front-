@@ -3,360 +3,389 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pretty Face Beauty | PFB</title>
-<meta name="description" content="Shop Pretty Face Beauty. Discover lip products,make up and beauty essentials."> 
- <link rel="preconnect" href="https://fonts.googleapis.com">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#dceffa">
+<title>Pretty Face Beauty | The PFB Edit</title>
+<meta name="description" content="Discover the Pretty Face Beauty collection.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
-:root {
-  --blue: #B9DFF2;
-  --ice: #DCEFFA;
-  --brown: #4D9CC5;
-  --pink: #DCEFFA;
-  --ink: #3D7896;
-  --white: #FFFFFF;
-}
+:root{--ice:#eaf5fb;--pale:#f5f9fc;--deep:#315c83;--navy:#174b76;--ink:#29465f;--white:#fff;--line:#d7e7f1}
 *{box-sizing:border-box}
-body{margin:0;background:var(--ice);color:var(--ink);font-family:'Playpen Sans',cursive}
+html{scroll-behavior:smooth}
+body{margin:0;background:#fff;color:var(--ink);font-family:"Playpen Sans",cursive;line-height:1.6}
 button,input,select,textarea{font:inherit}
-button{cursor:pointer}
-.topbar{background:var(--brown);color:white;
-header{padding:18px 5%;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #eee}
-.logo{font-family:Georgia,serif;font-size:22px;letter-spacing:2px;color:var(--brown);font-weight:bold}
-.logo small{display:block;text-align:center;font:9px Arial;letter-spacing:5px;margin-top:5px}
-nav{display:flex;gap:18px;font-size:12px}
-nav a{color:var(--ink);text-decoration:none}
-.cart-button{border:1px solid var(--brown);background:white;padding:10px;color:var(--brown)}
-.hero{background:var(--ice);padding:65px 8%;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px}
-.eyebrow{letter-spacing:3px;font-size:10px;color:var(--brown)}
-h1{font:clamp(42px,7vw,76px) Georgia,serif;font-weight:normal;line-height:1.05;margin:18px 0}
-.hero p{line-height:1.8;color:#655b55;font-size:14px}
-.primary{background:var(--brown);color:white;border:0;padding:15px 25px;letter-spacing:1px;font-size:11px}
-.hero-art{min-height:300px;background:linear-gradient(145deg,#a9d3e7,#e8d8e0 60%,#b7d9e9);display:flex;align-items:center;justify-content:center;text-align:center}
-.hero-art span{font:italic 50px Georgia;color:white}
-section{padding:60px 6%}
-.section-head{text-align:center;margin-bottom:30px}
-.section-head h2{font:36px Georgia;font-weight:normal}
-.section-head p{font-size:12px;color:#82766e}
-.categories{display:flex;justify-content:center;gap:10px;flex-wrap:wrap;margin-bottom:28px}
-.categories button{background:white;border:1px solid #ddd;padding:10px 16px;font-size:11px}
-.categories button.active{background:var(--brown);color:white}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.product-image{height:230px;display:flex;align-items:center;justify-content:center;color:#795d56;font:italic 25px Georgia}
-.product-image.brown{background:linear-gradient(140deg,#dfc6b9,#f2e7df)}
-.product-image.blue{background:linear-gradient(140deg,#b5d9eb,#e7f3f7)}
-.product-image.pink{background:linear-gradient(140deg,#f1cbd8,#f8e8ed)}
-.product-info{padding:13px 2px}
-.product-info h3{font:19px Georgia;margin:0 0 7px}
-.product-info p{font-size:11px;color:#887d76;min-height:26px}
-.price{font-size:13px;font-weight:bold}
-.add{float:right;background:var(--brown);color:white;border:0;padding:9px 13px;font-size:10px}
-.editorial{background:var(--ice);display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center}
-.editorial-art{min-height:260px;background:linear-gradient(135deg,#b9dbea,#e7c8d6);display:grid;place-items:center;font:italic 38px Georgia;color:white}
-.editorial h2{font:38px Georgia;font-weight:normal}
-.editorial p{font-size:13px;line-height:1.8}
-.article-tag{font-size:10px;letter-spacing:2px;color:var(--brown)}
-footer{background:var(--brown);color:white;text-align:center;padding:40px 20px}
-footer .logo{color:white}
-footer p{font-size:11px;line-height:1.8}
-.overlay{display:none;position:fixed;inset:0;background:#0008;z-index:10;overflow:auto;padding:20px}
-.panel{background:white;max-width:520px;margin:20px auto;padding:25px}
-.panel-head{display:flex;justify-content:space-between;align-items:center}
-.close{border:0;background:none;font-size:25px}
-.cart-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid #eee;padding:14px 0;font-size:13px}
-.cart-line button{border:0;background:none}
-.total{display:flex;justify-content:space-between;padding:18px 0;font-weight:bold}
-label{display:block;font-size:11px;margin:13px 0 6px}
-input,select,textarea{width:100%;padding:12px;border:1px solid #ddd;background:white;border-radius:0}
-.payment-note{background:var(--ice);padding:12px;font-size:12px;line-height:1.6;margin-top:12px}
-.submit{width:100%;margin-top:18px}
-.muted{font-size:10px;color:#847970;line-height:1.6}
-@media(max-width:1024px){
- header{padding:15px 4%}nav{gap:10px;font-size:10px}
- .logo{font-size:17px}
- .hero{grid-template-columns:1fr;padding:45px 7%}
- .hero-art img {
-  width: 100%;
-  max-width: 520px;
-  max-height: 480px;
-  height: auto;
-  object-fit: contain;
-  display: block;
-  margin: 0 auto;
+a{color:inherit;text-decoration:none}
+.announcement{padding:8px 14px;text-align:center;color:#fff;background:var(--deep);font-size:11px;letter-spacing:.08em}
+.site-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line);backdrop-filter:blur(12px)}
+.header-inner{max-width:1180px;margin:auto;min-height:74px;padding:12px 24px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.brand{color:var(--navy);font-size:clamp(17px,2.5vw,23px);font-weight:700;letter-spacing:-.06em;line-height:1.15}
+.brand small{display:block;margin-top:4px;font-size:8px;font-weight:500;letter-spacing:.23em}
+.nav-links{display:flex;gap:24px;font-size:12px;color:var(--deep)}
+.cart-trigger{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:99px;padding:9px 14px;cursor:pointer;font-size:12px}
+.hero{background:var(--ice);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:340px;height:340px;border-radius:50%;right:-120px;top:-180px;background:#b9dff277}
+.hero-inner{max-width:1180px;margin:auto;padding:62px 24px;min-height:470px;display:grid;grid-template-columns:1.05fr .85fr;align-items:center;gap:clamp(28px,6vw,80px);position:relative}
+.eyebrow{color:var(--deep);font-size:10px;font-weight:600;letter-spacing:.17em;text-transform:uppercase}
+h1,h2,h3,p{margin-top:0}
+h1{max-width:570px;margin:13px 0 18px;color:var(--navy);font-size:clamp(38px,5.6vw,68px);font-weight:600;letter-spacing:-.075em;line-height:1.12}
+.hero-copy{max-width:450px;color:var(--deep);font-size:14px;line-height:1.9;margin-bottom:26px}
+.button{display:inline-flex;justify-content:center;align-items:center;border:0;border-radius:99px;background:var(--navy);color:#fff;padding:13px 22px;cursor:pointer;font-size:11px;font-weight:600;letter-spacing:.04em}
+.button:hover{background:var(--deep)}
+.hero-photo-wrap{width:100%;max-width:390px;justify-self:center}
+.hero-photo{display:block;width:100%;max-height:430px;aspect-ratio:4/5;object-fit:cover;object-position:center;border-radius:48% 48% 18px 18px;background:#d8eaf5}
+.intro{padding:56px 24px 48px;text-align:center;max-width:800px;margin:auto}
+.intro h2,.section-heading h2{color:var(--navy);font-size:clamp(25px,3.5vw,38px);font-weight:600;letter-spacing:-.06em;margin:8px 0 10px}
+.intro p{max-width:610px;margin:auto;color:var(--deep);font-size:13px}
+.shop-section{background:var(--pale);padding:56px 24px 68px}
+.shop-inner{max-width:1120px;margin:auto}
+.section-heading{text-align:center;margin-bottom:30px}
+.section-heading p{color:var(--deep);font-size:12px;margin:0}
+.product-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.product-card{min-width:0;padding:21px;background:#fff;border:1px solid #e3edf4;border-radius:22px;display:flex;flex-direction:column}
+.product-placeholder{min-height:112px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;padding:14px;text-align:center;border-radius:15px;background:linear-gradient(145deg,#edf7fc,#dceefa);color:#7393ad;font-size:10px;letter-spacing:.1em}
+.product-tag{align-self:flex-start;color:var(--navy);background:var(--ice);padding:4px 9px;border-radius:99px;font-size:9px;font-weight:600;letter-spacing:.08em;margin-bottom:8px}
+.product-card h3{color:var(--navy);font-size:18px;line-height:1.35;margin:0 0 4px;font-weight:600}
+.product-price{color:var(--navy);font-size:18px;font-weight:700;margin:0 0 10px}
+.product-description{color:#6a849a;font-size:10px;margin:0 0 13px;min-height:30px}
+.field-label{color:var(--deep);display:block;font-size:10px;margin:0 0 5px}
+.product-select,.shade-input{width:100%;min-height:42px;border:1px solid var(--line);border-radius:11px;background:#fff;color:var(--ink);padding:9px 11px;outline-color:#b9dff2;font-size:11px;margin-bottom:12px}
+.add-button{width:100%;margin-top:auto}
+.story-section{max-width:900px;margin:auto;padding:62px 24px;text-align:center}
+.story-section p{color:var(--deep);font-size:13px;max-width:620px;margin:auto}
+.school-section{background:var(--ice);padding:52px 24px;text-align:center}
+.school-section p{color:var(--deep);font-size:13px;max-width:570px;margin:0 auto 20px}
+footer{background:var(--navy);color:#fff;padding:32px 24px;text-align:center}
+footer .footer-brand{font-size:20px;font-weight:600}
+footer p{font-size:10px;opacity:.85;margin:7px 0 0}
+.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:17px;margin-top:14px;font-size:10px}
+.cart-overlay{position:fixed;inset:0;z-index:50;background:#0f263a70;display:none;justify-content:flex-end}
+.cart-overlay.open{display:flex}
+.cart-panel{width:min(440px,100%);height:100%;overflow-y:auto;background:#fff;padding:24px;box-shadow:0 14px 40px #234e7018}
+.cart-head{display:flex;align-items:center;justify-content:space-between}
+.cart-head h2{color:var(--navy);margin:0;font-size:23px}
+.icon-button{border:1px solid var(--line);background:#fff;color:var(--navy);border-radius:50%;width:38px;height:38px;cursor:pointer}
+.cart-items{margin:20px 0}
+.cart-line{padding:13px 0;border-bottom:1px solid var(--line);display:grid;grid-template-columns:1fr auto;gap:10px}
+.cart-line strong{display:block;color:var(--navy);font-size:12px}
+.cart-line small{color:#70899e;font-size:10px}
+.cart-line button{border:0;background:transparent;color:#8a5360;cursor:pointer;font-size:10px}
+.quantity{display:flex;align-items:center;gap:8px;margin-top:7px}
+.quantity button{border:1px solid var(--line);border-radius:50%;width:25px;height:25px;color:var(--navy)}
+.cart-total{display:flex;justify-content:space-between;color:var(--navy);font-weight:700;padding:16px 0;border-top:1px solid var(--line)}
+.checkout-form{display:grid;gap:10px;margin-top:14px}
+.checkout-form h3{color:var(--navy);margin:8px 0 0;font-size:15px}
+.checkout-form input,.checkout-form select,.checkout-form textarea{width:100%;border:1px solid var(--line);border-radius:11px;padding:11px;color:var(--ink);background:#fff;font-size:11px}
+.checkout-note{color:#70899e;font-size:10px;line-height:1.6}
+.empty-cart{color:#70899e;font-size:12px;padding:20px 0}
+@media(max-width:700px){
+.header-inner{min-height:66px;padding:10px 16px}
+.nav-links{display:none}
+.hero-inner{grid-template-columns:1fr .82fr;gap:14px;padding:40px 17px;min-height:0}
+h1{font-size:clamp(29px,8vw,43px)}
+.hero-copy{font-size:11px;line-height:1.7}
+.hero-photo{max-height:300px}
+.button{padding:11px 15px;font-size:9px}
+.intro{padding:42px 20px}
+.shop-section{padding:42px 14px 48px}
+.product-grid{gap:10px}
+.product-card{padding:12px;border-radius:16px}
+.product-placeholder{min-height:85px;font-size:8px;margin-bottom:11px}
+.product-card h3{font-size:14px}
+.product-price{font-size:16px}
+.product-description{font-size:9px;min-height:38px}
+.product-select,.shade-input{font-size:10px;padding:8px}
+.add-button{padding:10px 8px}
+.story-section{padding:46px 20px}
 }
- .hero-art{min-height:210px}
- .products{grid-template-columns:repeat(2,1fr);gap:13px}
- .product-image{height:170px}
- .product-info h3{font-size:16px}
- .editorial{grid-template-columns:1fr}
- .editorial-art{min-height:200px}
- section{padding:45px 5%}
-} h1,h2,.logo,.hero-art span{
-  font-family:'Playpen Sans',cursive;
+@media(max-width:360px){
+.hero-inner{grid-template-columns:1fr}
+.hero-photo-wrap{max-width:245px}
+.hero-copy{max-width:100%}
 }
 </style>
 </head>
+
 <body>
+<div class="announcement">THE PFB EDIT — DISCOVER THE COLLECTION</div>
 
-<div class="topbar">A LITTLE BEAUTY. A LOT OF PERSONALITY. ♡</div>
-
-<header>
- <div class="logo">PRETTY FACE<small>BEAUTY</small></div>
- <nav>
-  <a href="#shop">SHOP</a>
-  <a href="#school">GIRL SCHOOL</a>
- </nav>
- <button class="cart-button" onclick="openCart()">BAG (<span id="count">0</span>)</button>
+<header class="site-header">
+<div class="header-inner">
+<a class="brand" href="#home">PRETTY FACE BEAUTY<small>BEAUTY, ON YOUR TERMS</small></a>
+<nav class="nav-links">
+<a href="#home">Home</a>
+<a href="#shop">Shop</a>
+<a href="#story">Our Story</a>
+<a href="#girl-school">PFB Girl School</a>
+</nav>
+<button class="cart-trigger" onclick="openCart()" type="button">BAG (<span id="cart-count">0</span>)</button>
+</div>
 </header>
 
 <main>
-<div class="hero">
- <div>
-  <div class="eyebrow">WELCOME TO PRETTY FACE BEAUTY</div>
-  <h1>Beauty,<br>on your terms.</h1>
-  <p>Discover your next beauty obsession. Curated beauty essentials, beautiful colours and products made to make you feel good.</p>
-  <button class="primary" onclick="document.querySelector('#shop').scrollIntoView({behavior:'smooth'})">EXPLORE THE COLLECTION</button>
- </div>
- <div class="hero-art">
-  <img src="IMG_8256.jpeg" alt="Pretty Face Beauty blue lip gloss campaign">
+<section class="hero" id="home">
+<div class="hero-inner">
+<div>
+<div class="eyebrow">Pretty Face Beauty</div>
+<h1>Beauty, on your terms.</h1>
+<p class="hero-copy">A considered collection of beauty essentials, created for everyday wear and individual expression.</p>
+<a class="button" href="#shop">SHOP THE COLLECTION</a>
+</div>
+<div class="hero-photo-wrap">
+<img class="hero-photo" src="IMG_8256.jpeg" alt="Pretty Face Beauty model holding a PFB lip gloss" onerror="this.outerHTML='<div class=&quot;hero-photo&quot; style=&quot;display:flex;align-items:center;justify-content:center;text-align:center;padding:20px;color:#315c83;font-size:12px&quot;>Add your original model-with-gloss image as<br><strong>IMG_8256.jpeg</strong></div>'">
 </div>
 </div>
-
-<section id="shop">
- <div class="section-head">
-  <div class="eyebrow">THE PFB EDIT</div>
-  <h2>Shop our collections</h2>
-  <p>Find your next favourite.</p>
- </div>
- <div class="categories">
-  <button class="active" onclick="filter('All',this)">All products</button>
-  <button onclick="filter('Lips',this)">Lip collection</button>
-  <button onclick="filter('Blush',this)">Blush</button>
-  <button onclick="filter('Essentials',this)">Essentials</button>
- </div>
- <div class="products" id="products"></div>
 </section>
 
-<section class="editorial" id="school">
- <div class="editorial-art">Beauty Decoded</div>
- <div>
-  <div class="article-tag">PFB GIRL SCHOOL</div>
-  <h2>Beauty is an art. Learn it.</h2>
-  <p>Welcome to PFB Girl School: your space for beauty knowledge, product education, beauty conversations and everything worth knowing.</p>
-  <p><strong>Coming soon:</strong> Beauty Decoded — where we break down products, techniques and the little details that make all the difference.</p>
- </div>
+<section class="intro">
+<div class="eyebrow">The PFB standard</div>
+<h2>Thoughtfully selected beauty essentials.</h2>
+<p>Explore considered shades and everyday products designed to complement your beauty routine.</p>
+</section>
+
+<section class="shop-section" id="shop">
+<div class="shop-inner">
+<div class="section-heading">
+<div class="eyebrow">The collection</div>
+<h2>The PFB Edit</h2>
+<p>A curated selection of Pretty Face Beauty essentials.</p>
+</div>
+<div class="product-grid" id="product-grid"></div>
+</div>
+</section>
+
+<section class="story-section" id="story">
+<div class="eyebrow">Our Story</div>
+<h2>THE STORY BEHIND PFB</h2>
+<p>Discover the vision, perspective and people behind Pretty Face Beauty.</p>
+</section>
+
+<section class="school-section" id="girl-school">
+<div class="eyebrow">PFB Girl School</div>
+<h2>Beauty decoded.</h2>
+<p>Product knowledge, application techniques and practical beauty education.</p>
 </section>
 </main>
 
-<footer>
- <div class="logo">PRETTY FACE BEAUTY</div>
- <p>Beauty, on your terms.</p>
- <p>North Cyprus · Delivery & collection</p>
- <p>© 2026 Pretty Face Beauty</p>
+<footer id="contact">
+<div class="footer-brand">PRETTY FACE BEAUTY</div>
+<p>Beauty, on your terms.</p>
+<div class="footer-links">
+<a href="#shop">Shop</a>
+<a href="#story">Our Story</a>
+<a href="#girl-school">PFB Girl School</a>
+<a href="#contact">Contact</a>
+<a href="#contact">Shipping & Returns</a>
+</div>
 </footer>
 
-<div class="overlay" id="cartOverlay">
- <div class="panel">
-  <div class="panel-head">
-   <h2 style="font:28px Georgia">Your shopping bag</h2>
-   <button class="close" onclick="closeCart()">×</button>
-  </div>
-  <div id="cartItems"></div>
-  <div class="total"><span>Total</span><span id="total">₺0</span></div>
-  <button class="primary" style="width:100%" onclick="showCheckout()">CONTINUE TO CHECKOUT</button>
- </div>
+<div class="cart-overlay" id="cart-overlay" onclick="overlayClose(event)">
+<aside class="cart-panel" role="dialog" aria-modal="true" aria-label="Shopping bag">
+<div class="cart-head">
+<h2>Your bag</h2>
+<button class="icon-button" onclick="closeCart()" aria-label="Close bag">×</button>
 </div>
+<div id="cart-items" class="cart-items"></div>
+<div class="cart-total"><span>Subtotal</span><span id="cart-total">$0.00</span></div>
 
-<div class="overlay" id="checkoutOverlay">
- <div class="panel">
-  <div class="panel-head">
-   <h2 style="font:28px Georgia">Checkout</h2>
-   <button class="close" onclick="closeCheckout()">×</button>
-  </div>
-  <form id="checkoutForm">
-   <label>Full name</label>
-   <input id="customer" required placeholder="Your full name">
-
-   <label>Phone / WhatsApp number</label>
-   <input id="phone" required placeholder="+90 ...">
-
-   <label>Email (optional)</label>
-   <input id="email" type="email" placeholder="Your email">
-
-   <label>How would you like to receive your order?</label>
-   <select id="delivery" onchange="deliveryChange()">
-    <option value="Delivery">Delivery</option>
-    <option value="Collection">Collection</option>
-   </select>
-
-   <div id="addressBox">
-    <label>Delivery address and district</label>
-    <textarea id="address" rows="3" placeholder="Enter your full delivery address"></textarea>
-   </div>
-
-   <label>How would you like to pay?</label>
-   <select id="payment" onchange="paymentChange()">
-    <option value="WhatsApp - request payment details">Message PFB for payment details</option>
-    <option value="USDT">USDT</option>
-    <option value="Bitcoin">Bitcoin</option>
-    <option value="Ethereum">Ethereum</option>
-    <option value="Cash">Cash on collection / delivery (where available)</option>
-   </select>
-
-   <div class="payment-note" id="paymentNote">
-    PFB will contact you with payment instructions after receiving your order.
-   </div>
-
-   <label>Additional instructions (optional)</label>
-   <textarea id="notes" rows="2" placeholder="Anything else we should know?"></textarea>
-
-   <p class="muted">Submitting creates an order request through WhatsApp. Your order is not confirmed as paid until PFB verifies payment and confirms availability and delivery.</p>
-
-   <button class="primary submit" type="submit">SUBMIT MY ORDER VIA WHATSAPP</button>
-  </form>
- </div>
+<form class="checkout-form" onsubmit="submitOrder(event)">
+<h3>Delivery details</h3>
+<input name="customerName" placeholder="Full name" required>
+<input name="phone" placeholder="Phone / WhatsApp number" required>
+<input name="email" type="email" placeholder="Email address (optional)">
+<select name="delivery" required>
+<option value="">Choose delivery method</option>
+<option>Delivery</option>
+<option>Collection</option>
+</select>
+<textarea name="address" rows="2" placeholder="Delivery address (if applicable)"></textarea>
+<select name="payment" required>
+<option value="">Choose payment method</option>
+<option>Bank transfer — details to be confirmed</option>
+<option>USDT — wallet details to be confirmed</option>
+<option>Bitcoin — wallet details to be confirmed</option>
+<option>Ethereum — wallet details to be confirmed</option>
+<option>Cash — confirm availability with PFB</option>
+</select>
+<p class="checkout-note">Submitting your order opens WhatsApp with your order summary. Payment and delivery arrangements will be confirmed directly by PFB. No payment is processed on this website.</p>
+<button class="button" type="submit">SEND ORDER VIA WHATSAPP</button>
+</form>
+</aside>
 </div>
 
 <script>
-const PFB_WHATSAPP = "2347071633877";
+const PFB_WHATSAPP="2347071633877";
 
-const products = [
- {id:1,name:"PFB Lip Gloss",category:"Lips",price:450,desc:"Your everyday glossy essential.",style:"pink"},
- {id:2,name:"PFB Lip Liner",category:"Lips",price:400,desc:"Define your perfect lip combination.",style:"brown"},
- {id:3,name:"PFB Icy Collection",category:"Lips",price:1100,desc:"Three glosses. One signature set.",style:"blue"},
- {id:4,name:"PFB Cream Blush",category:"Blush",price:550,desc:"A beautiful flush of colour.",style:"pink"},
- {id:5,name:"PFB Eye Patches",category:"Essentials",price:300,desc:"A little extra care for your routine.",style:"blue"},
- {id:6,name:"PFB Beauty Bundle",category:"Essentials",price:1250,desc:"Your beauty favourites together.",style:"brown"}
+// Add the confirmed lip gloss and lip liner shade names here when ready.
+const products=[
+{id:"blush",name:"PFB Blush",price:10,tag:"NEW",description:"Choose from the PFB blush collection.",type:"shade",shades:["Pretty Thing","Pretty Bold","Pretty Toasted"]},
+{id:"gloss",name:"Lip Gloss",price:12,description:"A PFB lip essential. Enter your preferred shade.",type:"text",fieldLabel:"Preferred gloss shade"},
+{id:"liner",name:"Lip Liner",price:12,description:"Complete your lip look. Enter your preferred shade.",type:"text",fieldLabel:"Preferred liner shade"},
+{id:"icy-kit",name:"PFB Icy Lip Gloss Kit",price:38,description:"The complete PFB Icy three-shade lip gloss set.",type:"fixed"},
+{id:"icy-patches",name:"Icy Eye Patches",price:6,description:"Choose one pair or two pairs.",type:"patches"},
+{id:"other-patches",name:"Other Eye Patches",price:6,description:"Choose one pair or two pairs.",type:"patches"},
+{id:"lipstick",name:"PFB Matte Lipstick",price:12,description:"Choose your lipstick shade.",type:"shade",shades:["Grounded","Soft Spoken","No Apologies"]}
 ];
 
 let cart=[];
-let currentFilter="All";
 
-const money=n=>"₺"+n.toLocaleString("tr-TR");
+const money=n=>new Intl.NumberFormat("en-US",{style:"currency",currency:"USD"}).format(n);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 
 function renderProducts(){
- const list=products.filter(p=>currentFilter==="All"||p.category===currentFilter);
- document.getElementById("products").innerHTML=list.map(p=>`
- <article>
-  <div class="product-image ${p.style}">PFB</div>
-  <div class="product-info">
-   <h3>${p.name}</h3>
-   <p>${p.desc}</p>
-   <span class="price">${money(p.price)}</span>
-   <button class="add" onclick="add(${p.id})">ADD +</button>
-  </div>
- </article>`).join("");
+document.getElementById("product-grid").innerHTML=products.map(p=>{
+let field="";
+
+if(p.type==="shade"){
+field=`<label class="field-label" for="opt-${p.id}">Select shade</label>
+<select class="product-select" id="opt-${p.id}">
+<option value="">Choose a shade</option>
+${p.shades.map(s=>`<option>${esc(s)}</option>`).join("")}
+</select>`;
+}
+else if(p.type==="text"){
+field=`<label class="field-label" for="opt-${p.id}">${p.fieldLabel}</label>
+<input class="shade-input" id="opt-${p.id}" placeholder="Enter shade name" maxlength="60">`;
+}
+else if(p.type==="patches"){
+field=`<label class="field-label" for="opt-${p.id}">Pack size</label>
+<select class="product-select" id="opt-${p.id}">
+<option value="1">One pair — $6</option>
+<option value="2">Two pairs — $10</option>
+</select>`;
+}
+else{
+field=`<div class="field-label">Complete set · No shade selection required</div>`;
 }
 
-function filter(cat,button){
- currentFilter=cat;
- document.querySelectorAll(".categories button").forEach(b=>b.classList.remove("active"));
- button.classList.add("active");
- renderProducts();
+return `<article class="product-card">
+<div class="product-placeholder">PFB PRODUCT IMAGE</div>
+${p.tag?`<span class="product-tag">${p.tag}</span>`:""}
+<h3>${p.name}</h3>
+<p class="product-price">${p.type==="patches"?"From $6":money(p.price)}</p>
+<p class="product-description">${p.description}</p>
+${field}
+<button class="button add-button" onclick="addToCart('${p.id}')">ADD TO BAG</button>
+</article>`;
+}).join("");
 }
 
-function add(id){
- const p=products.find(x=>x.id===id);
- const item=cart.find(x=>x.id===id);
- if(item)item.qty++;
- else cart.push({...p,qty:1});
- updateCart();
+function addToCart(id){
+const p=products.find(x=>x.id===id);
+const el=document.getElementById("opt-"+id);
+let option="",price=p.price;
+
+if(p.type==="shade"||p.type==="text"){
+option=el.value.trim();
+if(!option)return alert(p.type==="shade"?"Please choose a shade first.":"Please enter your preferred shade.");
+}
+else if(p.type==="patches"){
+const n=Number(el.value);
+price=n===2?10:6;
+option=n===2?"Two pairs":"One pair";
+}
+else{
+option="Complete PFB Icy set";
+}
+
+const key=id+"|"+option;
+const existing=cart.find(x=>x.key===key);
+
+if(existing)existing.quantity++;
+else cart.push({key,id,name:p.name,option,price,quantity:1});
+
+updateCart();
+openCart();
 }
 
 function updateCart(){
- document.getElementById("count").textContent=cart.reduce((s,p)=>s+p.qty,0);
- document.getElementById("total").textContent=money(cart.reduce((s,p)=>s+p.price*p.qty,0));
- document.getElementById("cartItems").innerHTML=cart.length?cart.map(p=>`
- <div class="cart-line">
-  <div><strong>${p.name}</strong><br>${money(p.price)} × ${p.qty}</div>
-  <div>
-   <button onclick="changeQty(${p.id},-1)">−</button>
-   ${p.qty}
-   <button onclick="changeQty(${p.id},1)">+</button>
-  </div>
- </div>`).join(""):"Your bag is currently empty.";
+const count=cart.reduce((s,x)=>s+x.quantity,0);
+const total=cart.reduce((s,x)=>s+x.price*x.quantity,0);
+
+document.getElementById("cart-count").textContent=count;
+document.getElementById("cart-total").textContent=money(total);
+
+document.getElementById("cart-items").innerHTML=cart.length?
+cart.map((x,i)=>`<div class="cart-line">
+<div>
+<strong>${esc(x.name)}</strong>
+<small>${esc(x.option)} · ${money(x.price)} each</small>
+<div class="quantity">
+<button onclick="changeQty(${i},-1)">−</button>
+<span>${x.quantity}</span>
+<button onclick="changeQty(${i},1)">+</button>
+<button onclick="removeItem(${i})">Remove</button>
+</div>
+</div>
+<strong>${money(x.price*x.quantity)}</strong>
+</div>`).join("")
+:'<p class="empty-cart">Your bag is currently empty.</p>';
 }
 
-function changeQty(id,n){
- const p=cart.find(x=>x.id===id);
- if(!p)return;
- p.qty+=n;
- if(p.qty<=0)cart=cart.filter(x=>x.id!==id);
- updateCart();
+function changeQty(i,d){
+cart[i].quantity+=d;
+if(cart[i].quantity<=0)cart.splice(i,1);
+updateCart();
+}
+
+function removeItem(i){
+cart.splice(i,1);
+updateCart();
 }
 
 function openCart(){
- updateCart();
- document.getElementById("cartOverlay").style.display="block";
-}
-function closeCart(){document.getElementById("cartOverlay").style.display="none"}
-
-function showCheckout(){
- if(!cart.length){alert("Your bag is empty.");return}
- closeCart();
- document.getElementById("checkoutOverlay").style.display="block";
-}
-function closeCheckout(){document.getElementById("checkoutOverlay").style.display="none"}
-
-function deliveryChange(){
- const collection=document.getElementById("delivery").value==="Collection";
- document.getElementById("addressBox").style.display=collection?"none":"block";
- document.getElementById("address").required=!collection;
+document.getElementById("cart-overlay").classList.add("open");
+document.body.style.overflow="hidden";
+updateCart();
 }
 
-function paymentChange(){
- const method=document.getElementById("payment").value;
- const notes={
- "WhatsApp - request payment details":"PFB will contact you with payment instructions after receiving your order.",
- "USDT":"PFB will provide the correct USDT wallet address, network and QR code after confirming your order.",
- "Bitcoin":"PFB will provide its Bitcoin wallet address and QR code after confirming your order.",
- "Ethereum":"PFB will provide its Ethereum wallet address and QR code after confirming your order.",
- "Cash":"Cash payment must be agreed with PFB before fulfilment."
- };
- document.getElementById("paymentNote").textContent=notes[method];
+function closeCart(){
+document.getElementById("cart-overlay").classList.remove("open");
+document.body.style.overflow="";
 }
 
-document.getElementById("checkoutForm").addEventListener("submit",function(e){
- e.preventDefault();
- if(!cart.length)return;
+function overlayClose(e){
+if(e.target.id==="cart-overlay")closeCart();
+}
 
- const name=document.getElementById("customer").value;
- const phone=document.getElementById("phone").value;
- const email=document.getElementById("email").value;
- const delivery=document.getElementById("delivery").value;
- const address=document.getElementById("address").value;
- const payment=document.getElementById("payment").value;
- const notes=document.getElementById("notes").value;
- const total=cart.reduce((s,p)=>s+p.price*p.qty,0);
- const order="PFB-"+Date.now().toString().slice(-7);
- const lines=cart.map(p=>`${p.name} x ${p.qty} — ${money(p.price*p.qty)}`).join("\n");
+function submitOrder(e){
+e.preventDefault();
 
- const message=`Hello PFB! I'd like to place an order.
+if(!cart.length)return alert("Your bag is empty. Add a product before checking out.");
 
-Order: ${order}
+const d=new FormData(e.currentTarget);
+const total=cart.reduce((s,x)=>s+x.price*x.quantity,0);
 
-${lines}
+const lines=cart.map(x=>
+`• ${x.name} — ${x.option} × ${x.quantity}: ${money(x.price*x.quantity)}`
+).join("\n");
 
-Total: ${money(total)}
+const msg=[
+"Hello PFB! I'd like to place an order.",
+"",
+"ORDER DETAILS",
+lines,
+"",
+`Subtotal: ${money(total)}`,
+"",
+"CUSTOMER DETAILS",
+`Name: ${d.get("customerName")}`,
+`Phone: ${d.get("phone")}`,
+`Email: ${d.get("email")||"Not provided"}`,
+`Delivery: ${d.get("delivery")}`,
+`Address: ${d.get("address")||"To be confirmed"}`,
+`Payment preference: ${d.get("payment")}`,
+"",
+"Please confirm availability, delivery and payment instructions. Thank you!"
+].join("\n");
 
-Name: ${name}
-Phone: ${phone}
-Email: ${email||"Not provided"}
-Fulfilment: ${delivery}
-Address: ${address||"Collection to be arranged"}
-Payment: ${payment}
-Additional notes: ${notes||"None"}
-
-Please confirm product availability and payment instructions.`;
-
- window.open("https://wa.me/"+PFB_WHATSAPP+"?text="+encodeURIComponent(message),"_blank");
-});
+window.open(`https://wa.me/${PFB_WHATSAPP}?text=${encodeURIComponent(msg)}`,"_blank","noopener");
+}
 
 renderProducts();
 updateCart();
 </script>
 </body>
 </html>
-

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,7 +13,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 
 <style>
-:root{
+:root {
   --ice:#eaf5fb;
   --pale:#f5f9fc;
   --deep:#315c83;
@@ -21,11 +22,11 @@
   --line:#d7e7f1;
 }
 
-*{box-sizing:border-box}
+* { box-sizing:border-box; }
 
-html{scroll-behavior:smooth}
+html { scroll-behavior:smooth; }
 
-body{
+body {
   margin:0;
   background:white;
   color:var(--ink);
@@ -33,10 +34,10 @@ body{
   line-height:1.6;
 }
 
-button,input,select,textarea{font:inherit}
-a{color:inherit;text-decoration:none}
+button,input,select,textarea { font:inherit; }
+a { color:inherit; text-decoration:none; }
 
-.announcement{
+.announcement {
   padding:8px 14px;
   text-align:center;
   color:white;
@@ -45,7 +46,7 @@ a{color:inherit;text-decoration:none}
   letter-spacing:.08em;
 }
 
-.site-header{
+.site-header {
   position:sticky;
   top:0;
   z-index:20;
@@ -54,7 +55,7 @@ a{color:inherit;text-decoration:none}
   backdrop-filter:blur(12px);
 }
 
-.header-inner{
+.header-inner {
   max-width:1180px;
   margin:auto;
   min-height:76px;
@@ -65,7 +66,7 @@ a{color:inherit;text-decoration:none}
   gap:18px;
 }
 
-.brand-logo-wrap{
+.brand-logo-wrap {
   width:150px;
   height:65px;
   overflow:hidden;
@@ -76,21 +77,21 @@ a{color:inherit;text-decoration:none}
   border-radius:8px;
 }
 
-.brand-logo{
+.brand-logo {
   width:100%;
   height:100%;
   object-fit:contain;
   transform:none;
 }
 
-.nav-links{
+.nav-links {
   display:flex;
   gap:24px;
   font-size:12px;
   color:var(--deep);
 }
 
-.cart-trigger{
+.cart-trigger {
   border:1px solid var(--line);
   background:white;
   color:var(--navy);
@@ -100,9 +101,9 @@ a{color:inherit;text-decoration:none}
   font-size:12px;
 }
 
-.hero{background:var(--ice)}
+.hero { background:var(--ice); }
 
-.hero-inner{
+.hero-inner {
   max-width:1180px;
   margin:auto;
   padding:62px 24px;
@@ -113,7 +114,7 @@ a{color:inherit;text-decoration:none}
   gap:clamp(28px,6vw,80px);
 }
 
-.eyebrow{
+.eyebrow {
   color:var(--deep);
   font-size:10px;
   font-weight:600;
@@ -121,9 +122,9 @@ a{color:inherit;text-decoration:none}
   text-transform:uppercase;
 }
 
-h1,h2,h3,p{margin-top:0}
+h1,h2,h3,p { margin-top:0; }
 
-h1{
+h1 {
   max-width:570px;
   margin:13px 0 18px;
   color:var(--navy);
@@ -133,7 +134,7 @@ h1{
   line-height:1.12;
 }
 
-.hero-copy{
+.hero-copy {
   max-width:450px;
   color:var(--deep);
   font-size:14px;
@@ -141,7 +142,7 @@ h1{
   margin-bottom:26px;
 }
 
-.button{
+.button {
   display:inline-flex;
   justify-content:center;
   align-items:center;
@@ -156,15 +157,15 @@ h1{
   letter-spacing:.04em;
 }
 
-.button:hover{background:var(--deep)}
+.button:hover { background:var(--deep); }
 
-.hero-photo-wrap{
+.hero-photo-wrap {
   width:100%;
   max-width:390px;
   justify-self:center;
 }
 
-.hero-photo{
+.hero-photo {
   display:block;
   width:100%;
   aspect-ratio:1/1;
@@ -173,22 +174,22 @@ h1{
   background:#d8eaf5;
 }
 
-.shop-section{
+.shop-section {
   background:var(--pale);
   padding:56px 24px 68px;
 }
 
-.shop-inner{
+.shop-inner {
   max-width:1120px;
   margin:auto;
 }
 
-.section-heading{
+.section-heading {
   text-align:center;
   margin-bottom:30px;
 }
 
-.section-heading h2{
+.section-heading h2 {
   color:var(--navy);
   font-size:clamp(25px,3.5vw,38px);
   font-weight:600;
@@ -196,18 +197,18 @@ h1{
   margin:8px 0 10px;
 }
 
-.section-heading p{
+.section-heading p {
   color:var(--deep);
   font-size:12px;
 }
 
-.product-grid{
+.product-grid {
   display:grid;
   grid-template-columns:repeat(2,minmax(0,1fr));
   gap:18px;
 }
 
-.product-card{
+.product-card {
   min-width:0;
   padding:21px;
   background:white;
@@ -217,7 +218,7 @@ h1{
   flex-direction:column;
 }
 
-.product-image{
+.product-image {
   display:block;
   width:100%;
   aspect-ratio:1/1;
@@ -227,23 +228,7 @@ h1{
   background:#edf7fc;
 }
 
-.product-placeholder{
-  width:100%;
-  aspect-ratio:1/1;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin-bottom:16px;
-  padding:14px;
-  text-align:center;
-  border-radius:15px;
-  background:linear-gradient(145deg,#edf7fc,#dceefa);
-  color:#7393ad;
-  font-size:10px;
-  letter-spacing:.1em;
-}
-
-.product-tag{
+.product-tag {
   align-self:flex-start;
   color:var(--navy);
   background:var(--ice);
@@ -255,7 +240,7 @@ h1{
   margin-bottom:8px;
 }
 
-.product-card h3{
+.product-card h3 {
   color:var(--navy);
   font-size:18px;
   line-height:1.35;
@@ -263,28 +248,28 @@ h1{
   font-weight:600;
 }
 
-.product-price{
+.product-price {
   color:var(--navy);
   font-size:18px;
   font-weight:700;
   margin:0 0 10px;
 }
 
-.product-description{
+.product-description {
   color:#6a849a;
   font-size:10px;
   margin:0 0 13px;
   min-height:30px;
 }
 
-.field-label{
+.field-label {
   color:var(--deep);
   display:block;
   font-size:10px;
   margin:0 0 5px;
 }
 
-.product-select{
+.product-select {
   width:100%;
   min-height:42px;
   border:1px solid var(--line);
@@ -297,30 +282,30 @@ h1{
   margin-bottom:12px;
 }
 
-.add-button{
+.add-button {
   width:100%;
   margin-top:auto;
 }
 
-footer{
+footer {
   background:var(--navy);
   color:white;
   padding:32px 24px;
   text-align:center;
 }
 
-footer .footer-brand{
+.footer-brand {
   font-size:20px;
   font-weight:600;
 }
 
-footer p{
+footer p {
   font-size:10px;
   opacity:.85;
   margin:7px 0 0;
 }
 
-.footer-links{
+.footer-links {
   display:flex;
   flex-wrap:wrap;
   justify-content:center;
@@ -329,7 +314,7 @@ footer p{
   font-size:10px;
 }
 
-.cart-overlay{
+.cart-overlay {
   position:fixed;
   inset:0;
   z-index:50;
@@ -338,9 +323,9 @@ footer p{
   justify-content:flex-end;
 }
 
-.cart-overlay.open{display:flex}
+.cart-overlay.open { display:flex; }
 
-.cart-panel{
+.cart-panel {
   width:min(440px,100%);
   height:100%;
   overflow-y:auto;
@@ -349,19 +334,19 @@ footer p{
   box-shadow:0 14px 40px #234e7018;
 }
 
-.cart-head{
+.cart-head {
   display:flex;
   align-items:center;
   justify-content:space-between;
 }
 
-.cart-head h2{
+.cart-head h2 {
   color:var(--navy);
   margin:0;
   font-size:23px;
 }
 
-.icon-button{
+.icon-button {
   border:1px solid var(--line);
   background:white;
   color:var(--navy);
@@ -371,9 +356,9 @@ footer p{
   cursor:pointer;
 }
 
-.cart-items{margin:20px 0}
+.cart-items { margin:20px 0; }
 
-.cart-line{
+.cart-line {
   padding:13px 0;
   border-bottom:1px solid var(--line);
   display:grid;
@@ -381,18 +366,18 @@ footer p{
   gap:10px;
 }
 
-.cart-line strong{
+.cart-line strong {
   display:block;
   color:var(--navy);
   font-size:12px;
 }
 
-.cart-line small{
+.cart-line small {
   color:#70899e;
   font-size:10px;
 }
 
-.cart-line button{
+.cart-line button {
   border:0;
   background:transparent;
   color:#8a5360;
@@ -400,14 +385,14 @@ footer p{
   font-size:10px;
 }
 
-.quantity{
+.quantity {
   display:flex;
   align-items:center;
   gap:8px;
   margin-top:7px;
 }
 
-.quantity button{
+.quantity button {
   border:1px solid var(--line);
   border-radius:50%;
   width:25px;
@@ -415,7 +400,7 @@ footer p{
   color:var(--navy);
 }
 
-.cart-total{
+.cart-total {
   display:flex;
   justify-content:space-between;
   color:var(--navy);
@@ -424,13 +409,13 @@ footer p{
   border-top:1px solid var(--line);
 }
 
-.checkout-form{
+.checkout-form {
   display:grid;
   gap:10px;
   margin-top:14px;
 }
 
-.checkout-form h3{
+.checkout-form h3 {
   color:var(--navy);
   margin:8px 0 0;
   font-size:15px;
@@ -438,7 +423,7 @@ footer p{
 
 .checkout-form input,
 .checkout-form select,
-.checkout-form textarea{
+.checkout-form textarea {
   width:100%;
   border:1px solid var(--line);
   border-radius:11px;
@@ -448,86 +433,84 @@ footer p{
   font-size:11px;
 }
 
-.checkout-note{
+.checkout-note {
   color:#70899e;
   font-size:10px;
   line-height:1.6;
 }
 
-.empty-cart{
+.empty-cart {
   color:#70899e;
   font-size:12px;
   padding:20px 0;
 }
 
-@media(max-width:700px){
-  .header-inner{
+@media(max-width:700px) {
+  .header-inner {
     min-height:66px;
     padding:7px 14px;
   }
 
-  .brand-logo-wrap{
+  .brand-logo-wrap {
     width:112px;
     height:52px;
   }
 
-  .nav-links{display:none}
+  .nav-links { display:none; }
 
-  .hero-inner{
+  .hero-inner {
     grid-template-columns:1fr .82fr;
     gap:14px;
     padding:40px 17px;
     min-height:0;
   }
 
-  h1{font-size:clamp(29px,8vw,43px)}
+  h1 { font-size:clamp(29px,8vw,43px); }
 
-  .hero-copy{
+  .hero-copy {
     font-size:11px;
     line-height:1.7;
   }
 
-  .hero-photo{max-height:300px}
+  .hero-photo { max-height:300px; }
 
-  .button{
+  .button {
     padding:11px 15px;
     font-size:9px;
   }
 
-  .shop-section{padding:42px 14px 48px}
+  .shop-section { padding:42px 14px 48px; }
 
-  .product-grid{gap:10px}
+  .product-grid { gap:10px; }
 
-  .product-card{
+  .product-card {
     padding:12px;
     border-radius:16px;
   }
 
-  .product-image,.product-placeholder{
-    margin-bottom:11px;
-  }
+  .product-image { margin-bottom:11px; }
 
-  .product-card h3{font-size:14px}
+  .product-card h3 { font-size:14px; }
 
-  .product-price{font-size:16px}
+  .product-price { font-size:16px; }
 
-  .product-description{
+  .product-description {
     font-size:9px;
     min-height:38px;
   }
 
-  .product-select{
+  .product-select {
     font-size:10px;
     padding:8px;
   }
 
-  .add-button{padding:10px 8px}
+  .add-button { padding:10px 8px; }
 }
 
-@media(max-width:360px){
-  .hero-inner{grid-template-columns:1fr}
-  .hero-photo-wrap{max-width:245px}
-  .hero-copy{max-width:100%}
+@media(max-width:360px) {
+  .hero-inner { grid-template-columns:1fr; }
+  .hero-photo-wrap { max-width:245px; }
+  .hero-copy { max-width:100%; }
 }
 </style>
 </head>
@@ -681,8 +664,7 @@ id:"bare-blush",
 name:"Bare Blush",
 price:12,
 description:"A soft pink gloss from the PFB collection.",
-type:"shade",
-shades:["Bare Blush"],
+type:"fixed",
 image:"bare-blush.png"
 },
 
@@ -692,7 +674,7 @@ name:"PFB Lip Gloss Collection",
 price:12,
 description:"Discover the PFB gloss collection. Choose your preferred shade.",
 type:"shade",
-shades:["Pinky","Mulu","Shimmery","Crystal"],
+shades:["Shimmery","Crystal","Pinky","Mulu"],
 image:"lip-gloss-collection.png"
 },
 
@@ -703,7 +685,7 @@ price:12,
 description:"Four essential shades to complete your lip look.",
 type:"shade",
 shades:["Burgundy","Black","Brown","Dark Brown"],
-image:"lip-liners.jpeg"
+image:"lip-liners.png"
 },
 
 {
@@ -790,7 +772,7 @@ function renderProducts(){
 
       field=`
         <div class="field-label">
-          Complete set · No shade selection required
+          Complete product · No shade selection required
         </div>
       `;
 
@@ -854,7 +836,7 @@ function addToCart(id){
 
   }else{
 
-    option="Complete PFB Icy set";
+    option="Standard product";
 
   }
 

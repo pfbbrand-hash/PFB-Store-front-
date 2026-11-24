@@ -258,7 +258,7 @@ field=`<label class="field-label" for="opt-${p.id}">Pack size</label>
 field=`<div class="field-label">Complete set · No shade selection required</div>`;
 }
 return `<article class="product-card">
-${p.id==="blush"?'<img src="blush.png" alt="PFB Blush" style="width:100%;aspect-ratio:4/3;object-fit:contain;display:block;margin-bottom:16px;border-radius:15px;background:#edf7fc">':p.id==="lipstick"?'<img src="lipstick.png" alt="PFB Matte Lipstick" style="width:100%;aspect-ratio:4/3;object-fit:contain;display:block;margin-bottom:16px;border-radius:15px;background:#edf7fc">':'<div class="product-placeholder">PFB PRODUCT IMAGE</div>'}
+${p.id==="blush"?'<img src="blush.png" alt="PFB Blush" style="width:100%;aspect-ratio:4/3;object-fit:contain;display:block;margin-bottom:16px;border-radius:15px;background:#edf7fc">':p.id==="lipstick"?'<img src="lipstick.png" alt="PFB Matte Lipstick" style="width:100%;aspect-ratio:4/3;object-fit:contain;display:block;margin-bottom:16px;border-radius:15px;background:#edf7fc">':p.id==="bare-blush"?'<img src="bare-blush.png" alt="PFB Bare Blush Lip Gloss" style="width:100%;aspect-ratio:4/3;object-fit:contain;display:block;margin-bottom:16px;border-radius:15px;background:#edf7fc">':p.id==="gloss"?'<img src="lip-gloss-collection.png" alt="PFB Lip Gloss Collection" style="width:100%;aspect-ratio:4/3;object-fit:contain;display:block;margin-bottom:16px;border-radius:15px;background:#edf7fc">':'<div class="product-placeholder">PFB PRODUCT IMAGE</div>'}
 ${p.tag?`<span class="product-tag">${p.tag}</span>`:""}
 <h3>${p.name}</h3>
 <p class="product-price">${p.type==="patches"?"From $6":money(p.price)}</p>
